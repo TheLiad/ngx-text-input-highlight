@@ -1,0 +1,8 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ngx-text-input-highlight",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "assets": ["./_text-input-highlight.scss"]
+}

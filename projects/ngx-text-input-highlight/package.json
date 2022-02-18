@@ -1,0 +1,23 @@
+{
+  "name": "ngx-text-input-highlight",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "sass": "./_text-input-highlight.scss",
+      "types": "./ngx-text-input-highlight.d.ts",
+      "es2015": "./fesm2015/ngx-text-input-highlight.js",
+      "node": "./fesm2015/ngx-text-input-highlight.js",
+      "default": "./fesm2015/ngx-text-input-highlight.js"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

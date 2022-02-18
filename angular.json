@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ngx-text-input-highlight": {
+      "projectType": "library",
+      "root": "projects/ngx-text-input-highlight",
+      "sourceRoot": "projects/ngx-text-input-highlight/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-text-input-highlight/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-text-input-highlight/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-text-input-highlight/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-text-input-highlight/src/test.ts",
+            "tsConfig": "projects/ngx-text-input-highlight/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-text-input-highlight/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-text-input-highlight"
 }

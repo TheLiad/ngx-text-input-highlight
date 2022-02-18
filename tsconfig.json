@@ -10,6 +10,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "ngx-text-input-highlight": [
+        "dist/ngx-text-input-highlight/ngx-text-input-highlight",
+        "dist/ngx-text-input-highlight"
+      ]
+    },
     "target": "es2015",
     "module": "es2020",
     "lib": [
